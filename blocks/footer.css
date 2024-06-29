@@ -1,0 +1,44 @@
+.footer {
+
+    margin: 92px auto 24px;
+    color: #FFFFFF;
+}
+.footer__copyright {
+
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 544px) {
+  
+
+.footer {
+
+    margin: 92px auto 24px;
+    color: #FFFFFF;
+}
+.footer__copyright {
+
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+  
+
+}
+}
+
+@media screen and (max-width: 544px) {
+.footer {
+
+    margin: 92px auto 24px;
+    color: #FFFFFF;
+}
+.footer__copyright {
+
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 64px;
+}
+}
