@@ -2,12 +2,7 @@
     margin: 34px auto 90px;
     text-align: center;
   }
-  
-  .header__image {
-    width: 32px;
-    height: 32px;
-  }
-  
+    
   .header__text {
     text-transform: uppercase;
     font-weight: bold;
@@ -24,8 +19,5 @@
       margin: 20px auto 50px;
     }
   
-    .header__image {
-      width: 23px;
-      height: 23px;
-    }
+  
   }
