@@ -5,8 +5,4 @@
 @import url(../blocks/intro.css);
 @import url(../blocks/footer.css);
 @import url(../blocks/nav.css);
-
-body {
-    background-color: #2A2C2F;
-
-}
+@import url(../blocks/body.css);
