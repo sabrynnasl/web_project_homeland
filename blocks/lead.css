@@ -1,5 +1,6 @@
 .lead {
     margin: 0;
+    
   }
   
   .lead__title {
@@ -20,7 +21,6 @@
   .lead__image {
     width: 100%;
   }
-  
   
   
   @media screen and (max-width: 1024px) and (min-width: 544px) {
