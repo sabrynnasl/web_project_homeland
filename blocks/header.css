@@ -1,6 +1,11 @@
 .header {
-    margin: 34px auto 90px;
+    margin: 34px 148px 90px;
     text-align: center;
+  }
+
+  .header__image {
+    width: 32px;
+    height: 32px;
   }
     
   .header__text {
@@ -14,10 +19,13 @@
     }
   }
   
-  @media screen and (max-width: 544px) {
+  @media screen and (max-width: 720px) {
     .header {
       margin: 20px auto 50px;
     }
-  
+    .header__image {
+      width: 23px;
+      height: 23px;
+    }
   
   }

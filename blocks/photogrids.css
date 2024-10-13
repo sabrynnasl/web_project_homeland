@@ -1,9 +1,9 @@
 .photogrids {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2,300px);
-    gap: 20px;
-    margin: 40px 20px;
+    grid-template-rows: repeat(2, 300px);
+    gap: 16px;
+    margin: 118px auto 92px;
     max-width: 1280px;
     width: 100%;
 
