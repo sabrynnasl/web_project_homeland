@@ -19,7 +19,7 @@
 
    
 @media screen and (max-width: 1024px) {
-    .photogrid {
+    .photogrids {
       max-width: fit-content;
       max-height: fit-content;
       grid-template-columns: 1fr 1fr;
