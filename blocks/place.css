@@ -1,16 +1,17 @@
-.cidade {
+.place {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "title artist"
       "image description"
-      "button description"; 
+      "button description"
+      ". description";
     column-gap: 40px;
     row-gap: 20px;
     width: 100%;
   }
   
-  .cidade__title {
+  .place__title {
     font-size: 72px;
     font-family: "Inter";
     font-weight: 900;
@@ -21,7 +22,7 @@
     grid-area: title;
     
   }
-  .cidade__author-title {
+  .place__author-title {
     font-size: 12px;
     color: #aaaaaa;
     text-transform: uppercase;
@@ -31,7 +32,7 @@
     justify-content: end;
   }
   
-  .cidade__author {
+  .place__author {
     font-size: 20px;
     line-height: 22px;
     font-weight: 700;    
@@ -39,7 +40,7 @@
     
   }
   
-  .cidade__image {
+  .place__image {
     max-width: 460px;
     max-height: 460px;
     width: 100%;
@@ -49,18 +50,18 @@
     justify-self: center;
    }
   
-  .cidade__image:hover {
+  .place_image:hover {
     cursor: pointer;
     mask-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   }
   
-  .cidade__copyright {
+  .place__copyright {
     align-self: self-start;
     grid-area: artist;
     
   }
 
-  .cidade__button {
+  .place__button {
     max-width: 355px;
     width: 100%;
     height: 48px;
@@ -70,9 +71,10 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
     border: none;
     grid-area: button;
+    margin-left: 55px;
   }
   
-  .cidade__button:hover {
+  .place__button:hover {
     background: linear-gradient(
       90deg,
       rgba(2, 120, 254, 0.25) 0%,
@@ -81,7 +83,7 @@
   }
   
   
-  .cidade__description-text {
+  .place__description-text {
     grid-area: description;
     font-family: "Inter";
     font-size: 18px;
@@ -93,25 +95,30 @@
 
   
   @media screen and (max-width: 1024px) {
-    .cidade {
+    .place {
       max-width: 720px;
       gap: 48px 28px;
     }
   
-    .cidade__title {
+    .place__title {
       font-size: 42px;
       max-width: 340px;
       line-height: 1;
     }
   
-    .cidade__description-text {
+    .place__description-text {
       font-size: 16px;
       line-height: 1.5;
     }
   
-    .cidade__image {
+    .place__image {
       max-width: 340px;
       max-height: 340px;
+    }
+
+    .place__button {
+
+      margin: 0;
     }
   }
   
@@ -119,40 +126,46 @@
 
   @media screen and (max-width: 768px) {
 
-    .cidade {
+    .place {
       max-width: 720px;
       gap: 48px 28px;
+      grid-template-areas:
+      "title"
+      "artist"
+      "image description"
+      "button";
     
     } 
-    .cidade__title {
+    .place__title {
       font-size: 42px;
       line-height: 46px;
   }
-  .cidade__image {
+  .place__image {
       width: 100%;
   
   }
-  .cidade__author {
+  .place__author {
       font-size: 18px;
       line-height: 22px;
   
   }
   
-  .cidade__description-text {
+  .place__description-text {
   
       max-width: 100%;
       font-size: 16px;
       line-height: 26px;
   }
-  .cidade__button {
+  .place__button {
       
       max-width: 100%;
+      margin-left: 0;
   } 
 
   }
 
   @media screen and (max-width: 320px) {
-    .cidade {
+    .place {
       grid-template-columns: repeat(1, 1fr);
       grid-template-areas: 
       "title"
@@ -161,20 +174,21 @@
       "description"
       "button";
     }
-    .cidade__title {
+    .place__title {
       margin-left: 10px;
       font-size: 32px;
       text-align: left;
     }
-    .cidade__copyright {
+    .place__copyright {
       margin-left: 10px;
     }
-    .cidade__description-text {
+    .place__description-text {
       margin: 0 10px;
     }
   
-    .cidade__button {
+    .place__button {
       max-width: 90%;
+      margin-left: 0;
     }
  
   }

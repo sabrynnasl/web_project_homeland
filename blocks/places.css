@@ -1,4 +1,4 @@
-.cidades {
+.places {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
@@ -8,16 +8,16 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .cidades {
+    .places {
       padding: 0 24px;
       margin: 0;
     }
   }
 
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 720px) {
 
-    .cidades {
+    .places {
         margin:100px 20px 0;
         row-gap: 44px;
     }
@@ -25,7 +25,7 @@
 }
 @media screen and (max-width: 320px) {
 
-    .cidades {
+    .places {
         margin: 100px 0 0;
 
     }
