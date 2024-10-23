@@ -86,7 +86,7 @@
     cursor: pointer;
   }
   
-  .description {
+  .place__description {
 
     grid-area: description;
   }
