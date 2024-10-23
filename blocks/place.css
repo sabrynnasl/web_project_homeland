@@ -4,11 +4,11 @@
     grid-template-areas:
       "title artist"
       "image description"
-      "button description"
-      ". description";
+      "button description";
     column-gap: 40px;
     row-gap: 20px;
-    width: 100%;
+    margin-bottom: 80px;
+
   }
   
   .place__title {
@@ -86,38 +86,47 @@
     cursor: pointer;
   }
   
-  
-  .place__description-text {
+  .description {
+
     grid-area: description;
+  }
+  .place__description-text {
+   
     font-family: "Inter";
     font-size: 18px;
     line-height: 29.34px;
-    text-align: justify;
-    max-width: 85%;
     font-weight: 400;
+    margin: 25px 0 0;
   }
+  .place__description-text:first-child {
+    margin-top: 0;
 
+  }
   
   @media screen and (max-width: 1024px) {
     .place {
-      max-width: 720px;
+      grid-template-columns: 340px 1fr;
+      grid-template-rows: 1fr 340px;
       gap: 48px 28px;
+      margin-bottom: 120px;
+  
     }
   
     .place__title {
       font-size: 42px;
-      max-width: 340px;
       line-height: 1;
     }
   
     .place__description-text {
       font-size: 16px;
-      line-height: 1.5;
+      line-height: 26.08px;
+      
     }
   
     .place__image {
       max-width: 340px;
       max-height: 340px;
+      
     }
 
     .place__button {
@@ -126,23 +135,35 @@
     }
   }
   
+@media screen and (max-width: 714px) {
 
 
-  @media screen and (min-width: 544px) {
+
+}
+  
+
+
+  @media screen and (max-width: 640px) {
 
     .place {
-      max-width: 720px;
-      gap: 48px 28px;
+
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
       grid-template-areas:
       "title"
       "artist"
-      "image description"
-      "button description";
+      "image"
+      "description"
+      "button";
+      gap: 30px;
+      margin: 0;
     
     } 
     .place__title {
-      font-size: 42px;
+      font-size: 32px;
       line-height: 46px;
+      margin: 0;
+      text-align: left;
   }
   .place__image {
       width: 100%;
@@ -153,48 +174,25 @@
       line-height: 22px;
   
   }
-  
+  .place__copyright {
+    margin-left: 10px;
+  }
+
   .place__description-text {
   
-      max-width: 100%;
       font-size: 16px;
       line-height: 26px;
+      margin: 0 10px;
+
+      
   }
   .place__button {
       
-      max-width: 100%;
+      max-width: 90%;
       margin-left: 0;
   } 
 
   }
 
-  @media screen and (max-width: 320px) {
-    .place {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-areas: 
-      "title"
-      "artist"
-      "image"
-      "description"
-      "button";
-    }
-    .place__title {
-      margin-left: 10px;
-      font-size: 32px;
-      text-align: left;
-    }
-    .place__copyright {
-      margin-left: 10px;
-    }
-    .place__description-text {
-      margin: 0 10px;
-    }
+
   
-    .place__button {
-      max-width: 90%;
-      margin-left: 0;
-    }
- 
-  }
-  
-  /* NAO TO CONSEGUINDO FAZER COM QUE OS TEXTOS NAO FIQUEM ESPREMIDOS/*
